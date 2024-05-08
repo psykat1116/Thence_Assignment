@@ -8,9 +8,13 @@ const LoginForm = ({ submit }) => {
     name: "",
     email: "",
   });
+
+  // Function to handle input change
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
+
+  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validate(data.email)) {
@@ -19,6 +23,8 @@ const LoginForm = ({ submit }) => {
     }
     submit(true);
   };
+
+  // Function to handle error message and hide it after 3 seconds
   useEffect(() => {
     if (setError) {
       setTimeout(() => {
@@ -26,8 +32,9 @@ const LoginForm = ({ submit }) => {
       }, 3000);
     }
   }, [error, setError]);
+
   return (
-    <div className="w-full flex items-center justify-center p-5 font-manrope text-[#1C1C1C]">
+    <div className="w-full flex items-center justify-center p-5 font-manrope text-text_black">
       <div className="flex flex-col justify-start items-center h-full w-full min-[1000px]:w-1/2 gap-10 md:w-3/4">
         <div className="flex flex-col justify-start items-center text-center w-full">
           <p className="min-[1000px]:text-[36px] md:text-[32px] text-[28px] text-[#2DA950] font-cover_by_grace">
@@ -83,10 +90,10 @@ const LoginForm = ({ submit }) => {
           <button
             type="submit"
             disabled={data.name === "" || data.email === ""}
-            className={`p-5 min-[1000px]:w-[60%] md:w-[80%] w-full text-white rounded-[40px] ${
+            className={`p-4 text-lg min-[1000px]:w-[60%] md:w-[80%] w-full text-white ease-in duration-200 rounded-[40px] ${
               data.name === "" || data.email === ""
                 ? "bg-[#C9C9C9] disabled:cursor-not-allowed"
-                : "bg-[#1C1C1C]"
+                : "bg-bg_black hover:bg-[#4E4E4E] cursor-pointer"
             } `}
             onClick={handleSubmit}
           >

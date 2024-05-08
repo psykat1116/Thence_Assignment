@@ -3,11 +3,14 @@ import { useState } from "react";
 
 const Right = () => {
   const [active, setActive] = useState(0);
+
+  // Function to handle change in active state
   const handleChange = (index) => {
     setActive(index);
   };
+  
   return (
-    <div className="relative flex flex-col items-start xl:pl-32 pl-6 h-[100%] py-16 justify-start w-full">
+    <div className="relative flex flex-col items-start xl:pl-32 pl-6 h-[100%] py-16 justify-start w-full text-text_black">
       <div className="flex flex-col">
         <p className="min-[1000px]:text-4xl md:text-3xl text-2xl font-bold">
           Enhance fortune 50 company's insights teams research capabilities
@@ -39,7 +42,7 @@ const Right = () => {
           ></p>
         </div>
       </div>
-      <div className="bg-[#1C1C1C] flex items-center justify-between p-4 md:px-5 px-4 rounded-[40px] w-44 cursor-pointer hover:bg-[#4E4E4E] ease-in duration-200 md:mt-44 mt-20">
+      <button className="bg-bg_black flex items-center justify-between p-4 md:px-5 px-4 rounded-[40px] w-44 cursor-pointer hover:bg-[#4E4E4E] ease-in duration-200 md:mt-40 mt-20">
         <p className="text-white max-md:text-sm">Explore More</p>
         <svg
           width="16"
@@ -53,7 +56,7 @@ const Right = () => {
             fill="white"
           />
         </svg>
-      </div>
+      </button>
     </div>
   );
 };

@@ -4,12 +4,16 @@ import { useNavigate } from "react-router-dom";
 const Success = () => {
   const navigate = useNavigate();
   const [count, setCount] = useState(5);
+
+  // Function to redirect to homepage
   const rediectPage = () => {
     setCount((prev) => prev - 1);
     if (count === 0) {
       navigate("/");
     }
   };
+
+  // Function to redirect to homepage after 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       rediectPage();
@@ -18,8 +22,8 @@ const Success = () => {
   }, [count, setCount]);
 
   return (
-    <div className="w-full flex items-start justify-center mt-10 font-manrope text-[#1C1C1C]">
-      <div className="relative flex flex-col justify-between items-center min-[1000px]:w-[60%] md:w-[80%] w-full font-manrope text-center min-h-[75vh]">
+    <div className="w-full flex items-start justify-center mt-10 font-manrope text-text_black">
+      <div className="relative flex flex-col justify-between items-center min-[1000px]:w-[60%] md:w-[80%] w-full font-manrope text-center xl:h-[75vh] md:h-[50vh] h-[30vh]">
         <div className="flex flex-col justify-start items-center w-full">
           <svg
             width="80"

@@ -2,7 +2,7 @@ import React from "react";
 
 const Box1 = () => {
   return (
-    <div className="w-[268px] h-[239px] bg-white absolute top-28 rounded-2xl -left-44 shadow-[0px_22.59px_36.14px_0px_rgba(30,30,30,0.09)] p-[30px]">
+    <div className="w-[268px] h-[239px] bg-white absolute top-28 rounded-2xl -left-44 shadow-[0px_22.59px_36.14px_0px_rgba(30,30,30,0.09)] p-[30px] text-text_black">
       <svg
         width="110"
         height="110"

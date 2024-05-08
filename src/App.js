@@ -13,7 +13,7 @@ function App() {
           <Route
             path="*"
             element={
-              <h1 className="text-center h-[90vh] w-full flex items-center justify-center font-manrope text-8xl font-bold text-[#1C1C1C]">
+              <h1 className="text-center h-[90vh] w-full flex items-center justify-center font-manrope text-8xl font-bold text-text_black">
                 404 <br/>Not Found
               </h1>
             }

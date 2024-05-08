@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Header = ({ isLoginPage }) => {
   const navigate = useNavigate();
   return (
-    <div className="w-full md:pl-10 pl-3 md:pr-3 pr-1 py-2 flex justify-between items-center">
+    <div className="w-full md:pl-10 pl-3 md:pr-3 pr-1 py-2 flex justify-between items-center text-text_black">
       <svg
         width="100"
         height="30"
@@ -57,15 +57,20 @@ const Header = ({ isLoginPage }) => {
           </div>
         ) : (
           <>
-            <div
+            <button
               className="border border-[#EAEAEA] md:p-4 p-2 rounded-[40px] md:w-36 w-32 text-center cursor-pointer hover:bg-[#F1F1F1] ease-in duration-200"
               onClick={() => navigate("/login")}
             >
               Get Projects
-            </div>
-            <div className="p-4 bg-[#1C1C1C] text-[#FFFFFF] rounded-[40px] w-40 text-center cursor-pointer hover:bg-[#4E4E4E] ease-in duration-200 flex items-center justify-center max-md:hidden">
+            </button>
+            <button
+              className="p-4 bg-bg_black text-[#FFFFFF] rounded-[40px] w-40 text-center cursor-pointer hover:bg-[#4E4E4E] ease-in duration-200 flex items-center justify-center max-md:hidden"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Onboard Talent
-            </div>
+            </button>
           </>
         )}
       </div>

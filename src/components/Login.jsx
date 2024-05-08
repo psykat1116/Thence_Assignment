@@ -5,9 +5,12 @@ import Success from "./Success";
 
 const Login = () => {
   const [isSubmit, setIsSubmit] = useState(false);
+
+  // Function to handle submit state and change the view
   const handleSubmit = (value) => {
     setIsSubmit(value);
   };
+  
   return (
     <>
       <Navbar isLoginPage={true} />

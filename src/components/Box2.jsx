@@ -2,7 +2,7 @@ import React from "react";
 
 const Box2 = () => {
   return (
-    <div className="absolute h-20 w-60 bg-white bottom-10 -left-20 flex items-center justify-start shadow-[0px_15.21px_35.49px_0px_rgba(0,0,0,0.09)] rounded-[40px] px-2.5 gap-5">
+    <div className="absolute h-20 w-60 bg-white bottom-10 -left-20 flex items-center justify-start shadow-[0px_15.21px_35.49px_0px_rgba(0,0,0,0.09)] rounded-[40px] px-2.5 gap-5 text-text_black">
       <div className="rounded-full bg-[#DDEFE0] p-3 flex items-center justify-between ml-1">
         <svg
           width="26"
@@ -18,7 +18,7 @@ const Box2 = () => {
         </svg>
       </div>
       <div className="flex flex-col text-lg">
-        <p className="font-bold text-2xl text-[#1C1C1C]">10 DAYS</p>
+        <p className="font-bold text-2xl">10 DAYS</p>
         <p className="text-base text-[#828282]">Staff Deployment</p>
       </div>
     </div>

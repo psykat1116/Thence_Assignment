@@ -33,9 +33,12 @@ const data = [
 
 const Question = () => {
   const [show, setShow] = useState(-1);
+
+  // Function to show the answer on click
   const handleClick = (index) => {
     setShow(index);
   };
+
   return (
     <div className="relative flex flex-col md:w-1/2 w-full h-full">
       {data.map((item, index) => {

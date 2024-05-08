@@ -2,7 +2,7 @@ import React from "react";
 
 const LeftPanel = () => {
   return (
-    <div className="flex flex-col justify-between h-full md:w-1/2 w-full">
+    <div className="flex flex-col justify-between h-full md:w-1/2 w-full text-text_black">
       <div className="flex flex-col w-full text-left md:p-10 p-3">
         <h1 className="text-[#9E9D9D] font-cover_by_grace md:text-3xl sm:text-2xl text-xl">
           What's on your mind?
